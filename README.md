@@ -24,7 +24,7 @@ I build test automation with **Playwright and TypeScript**, and I use AI coding 
 
 **[job-application-tracker](https://github.com/micrzy/job-application-tracker)** — single-file HTML dashboard for tracking job applications: status, interviews, response times
 
-🚧 **Building:** an AI agent (Claude Code + Playwright MCP + Jira) that reads a Jira story, writes and runs a Playwright test, fixes its own test code when it fails, and moves the story to Done. Rules keep it honest: every acceptance criterion becomes an assertion, and assertions are never weakened to get a green run.
+- 🤖 Jira QA agent (Claude Code + Playwright MCP): picks up a Jira task, checks existing coverage, writes or extends the test, runs it 3 times and moves the task to Done. Guardrails: assertions are never weakened, and after 3 failed fix attempts it stops and reports in Jira.
 
 ---
 
